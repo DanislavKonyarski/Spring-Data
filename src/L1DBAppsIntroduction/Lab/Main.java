@@ -1,4 +1,4 @@
-package DBAppsIntroduction;
+package L1DBAppsIntroduction.Lab;
 
 import java.sql.*;
 import java.util.Properties;
