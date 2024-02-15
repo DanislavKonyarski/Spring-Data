@@ -40,5 +40,8 @@ public class T3GetMinionNames {
             count++;
 
         }
+        if (count==1){
+            System.out.printf("No villain with ID %s exists in the database.",vId);
+        }
     }
 }

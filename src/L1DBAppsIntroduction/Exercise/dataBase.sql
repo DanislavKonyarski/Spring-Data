@@ -310,16 +310,27 @@ values (42, 3);
 
 use minions_db;
 
-SELECT v.name, COUNT(distinct mv.minion_id) AS count_minion
-FROM minions m
-         JOIN minions_villains mv on m.id = mv.minion_id
-         JOIN villains v on v.id = mv.villain_id
-GROUP BY v.name
-HAVING count_minion > 15
-ORDER BY count_minion DESC;
 
-SELECT v.name AS vName, m.name AS mName, m.age AS mAge
-FROM minions m
-         JOIN minions_villains mv on m.id = mv.minion_id
-         JOIN villains v on v.id = mv.villain_id
-where v.id = 2;
+
+# SELECT v.name, COUNT(distinct mv.minion_id) AS count_minion
+# FROM minions m
+#          JOIN minions_villains mv on m.id = mv.minion_id
+#          JOIN villains v on v.id = mv.villain_id
+# GROUP BY v.name
+# HAVING count_minion > 15
+# ORDER BY count_minion DESC;
+#
+# SELECT v.name AS vName, m.name AS mName, m.age AS mAge
+# FROM minions m
+#          JOIN minions_villains mv on m.id = mv.minion_id
+#          JOIN villains v on v.id = mv.villain_id
+# where v.id = 2;
+#
+# select id from minions
+# where name = ?;
+#
+# insert into minions_villains(minion_id,villain_id)
+# value (?,?);
+#
+# select * from minions
+
