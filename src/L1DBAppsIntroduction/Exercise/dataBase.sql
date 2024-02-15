@@ -310,8 +310,11 @@ values (42, 3);
 
 use minions_db;
 
+# update towns set  name = upper(name) where country='Bul';
+#
+# select * from towns;
 
-
+# drop database minions_db;
 # SELECT v.name, COUNT(distinct mv.minion_id) AS count_minion
 # FROM minions m
 #          JOIN minions_villains mv on m.id = mv.minion_id
