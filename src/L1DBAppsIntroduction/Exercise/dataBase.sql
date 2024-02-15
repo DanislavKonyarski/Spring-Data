@@ -310,6 +310,7 @@ values (42, 3);
 
 use minions_db;
 
+insert into minions(name, age, town_id) value ('toto', '12','1');
 # update towns set  name = upper(name) where country='Bul';
 #
 # select * from towns;
